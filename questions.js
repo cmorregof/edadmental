@@ -1,7 +1,9 @@
 /* =====================================================================
    ¿Cuál es tu edad mental? — datos del test
    Todo es determinista: cada opción tiene una "edad" fija y el resultado
-   es la media de las 20 respuestas (y la media por tema).
+   es la media de las 25 respuestas (y la media por tema).
+   Las preguntas del tema «ciencia» llevan un campo `science` con el
+   hallazgo en el que se apoyan y su fuente; se muestra en el resultado.
    ===================================================================== */
 
 window.TOPICS = [
@@ -43,6 +45,14 @@ window.TOPICS = [
       young: 'Fiesta hasta que cierren. Tu hígado toma nota para más adelante.',
       mid: 'Sabes divertirte sin hipotecar el domingo. Equilibrio de élite.',
       old: 'Manzanilla a las diez y cero remordimientos. Un ídolo.'
+    }
+  },
+  {
+    id: 'ciencia', emoji: '🔬', label: 'Ciencia', desc: 'Cinco preguntas con base en investigación publicada',
+    notes: {
+      young: 'Según los estudios, tu mente sigue en fase de explorar: madrugar poco, arriesgar mucho y contar los desastres con orgullo.',
+      mid: 'La literatura te sitúa en plena transición: ya eliges mejor con quién estar, pero todavía te tienta el plan sin reservar.',
+      old: 'La ciencia dice que tu mente ya hizo la mudanza a la calma: te quedas con lo bueno, con los tuyos y con la mañana.'
     }
   }
 ];
@@ -100,6 +110,21 @@ window.QUESTIONS = [
       { text: 'Desayuno largo, un libro, y nada que hacer hasta la tarde.', age: 63 }
     ]
   },
+  {
+    topic: 'ciencia',
+    text: 'Sin alarma, sin obligaciones y sin nadie que te juzgue: ¿a qué hora te despertarías de forma natural?',
+    options: [
+      { text: 'Entre las 8 y las 10.', age: 40 },
+      { text: 'Después del mediodía. El día empieza cuando yo digo.', age: 16 },
+      { text: 'Antes de las 7, y con energía.', age: 62 },
+      { text: 'Entre las 10 y las 12.', age: 25 }
+    ],
+    science: {
+      finding: 'El cronotipo (la hora a la que tu reloj interno prefiere dormir y despertar) se va retrasando durante la adolescencia, toca techo alrededor de los 20 años y desde ahí se adelanta poco a poco con la edad.',
+      source: 'Roenneberg et al., «A marker for the end of adolescence», Current Biology, 2004',
+      url: 'https://doi.org/10.1016/j.cub.2004.11.039'
+    }
+  },
 
   /* ---- ronda 2 ---- */
   {
@@ -151,6 +176,21 @@ window.QUESTIONS = [
       { text: 'Jazz, cosas tranquilas y música para leer.', age: 62 },
       { text: 'Lo que escuchaba a los 15 años, sin disimular.', age: 38 }
     ]
+  },
+  {
+    topic: 'ciencia',
+    text: 'Te proponen algo nuevo con un punto de riesgo: saltar en paracaídas, pedir un plato que no sabes qué es, un viaje sin reservar nada.',
+    options: [
+      { text: 'Sí, si voy con gente de confianza.', age: 30 },
+      { text: 'Sí, sin pensarlo. La adrenalina es el plan.', age: 15 },
+      { text: 'No, gracias. Ya tuve mi época y la disfruté.', age: 63 },
+      { text: 'Depende de cuánto riesgo y de si vale la pena.', age: 44 }
+    ],
+    science: {
+      finding: 'La búsqueda de sensaciones (las ganas de experiencias nuevas e intensas) alcanza su máximo en la adolescencia y baja de forma sostenida a lo largo de la vida adulta.',
+      source: 'Steinberg et al., «Age differences in sensation seeking and impulsivity as indexed by behavior and self-report», Developmental Psychology, 2008',
+      url: 'https://doi.org/10.1037/a0012955'
+    }
   },
 
   /* ---- ronda 3 ---- */
@@ -204,6 +244,21 @@ window.QUESTIONS = [
       { text: 'Ir a una casa con amigos y sacar un juego de mesa.', age: 54 }
     ]
   },
+  {
+    topic: 'ciencia',
+    text: 'Tienes media hora libre y puedes pasarla con una de estas personas. ¿A quién eliges?',
+    options: [
+      { text: 'Alguien que acabo de conocer y con quien tengo mucho en común.', age: 21 },
+      { text: 'Un familiar cercano o una amistad de toda la vida.', age: 60 },
+      { text: 'Quien escribió un libro que me encantó.', age: 29 },
+      { text: 'Alguien que me puede ayudar con algo que necesito ahora.', age: 24 }
+    ],
+    science: {
+      finding: 'Cuando el tiempo se percibe como amplio, priorizamos conocer gente nueva y aprender; cuando se percibe como limitado, elegimos a quienes ya nos importan. Con la edad, la preferencia se desplaza hacia los vínculos cercanos. Es la teoría de la selectividad socioemocional.',
+      source: 'Fredrickson y Carstensen, «Choosing social partners: How old age and anticipated endings make people more selective», Psychology and Aging, 1990',
+      url: 'https://doi.org/10.1037/0882-7974.5.3.335'
+    }
+  },
 
   /* ---- ronda 4 ---- */
   {
@@ -238,6 +293,21 @@ window.QUESTIONS = [
     ]
   },
   {
+    topic: 'ciencia',
+    text: 'Vuelves de un viaje que tuvo de todo: momentos buenísimos y un par de desastres. Al contarlo, ¿qué sale primero?',
+    options: [
+      { text: 'Los desastres, con todo detalle. Son la mejor parte de la historia.', age: 19 },
+      { text: 'Lo bueno. Los desastres los menciono de pasada.', age: 49 },
+      { text: 'Los desastres, pero ya como algo que me da risa.', age: 31 },
+      { text: 'Casi solo lo bueno. Lo malo se me olvidó, en serio.', age: 64 }
+    ],
+    science: {
+      finding: 'Con la edad, la atención y la memoria se inclinan hacia lo positivo: las personas mayores atienden y recuerdan proporcionalmente más lo bueno que lo malo, en comparación con las jóvenes. Se conoce como «efecto de positividad».',
+      source: 'Reed, Chan y Mikels, «Meta-analysis of the age-related positivity effect», Psychology and Aging, 2014',
+      url: 'https://doi.org/10.1037/a0035194'
+    }
+  },
+  {
     topic: 'ocio',
     text: '¿Qué haces cuando te aburres?',
     options: [
@@ -246,6 +316,21 @@ window.QUESTIONS = [
       { text: 'Ordenar algo. Un cajón, una idea, la vida.', age: 45 },
       { text: 'Aburrirme no está mal. A veces ahí salen las mejores ideas.', age: 57 }
     ]
+  },
+  {
+    topic: 'ciencia',
+    text: 'Hace dos semanas dijiste que sí a un plan. Hoy es el día y no te apetece nada.',
+    options: [
+      { text: 'Voy, pero llego tarde y me quejo un rato.', age: 26 },
+      { text: 'Voy. Un compromiso es un compromiso.', age: 52 },
+      { text: 'Cancelo con una excusa creativa.', age: 17 },
+      { text: 'Voy, y además llevo algo para compartir.', age: 61 }
+    ],
+    science: {
+      finding: 'La responsabilidad y la amabilidad (dos de los cinco grandes rasgos de personalidad) aumentan de media a lo largo de la vida adulta, sobre todo entre los 20 y los 40 años. La psicología lo llama «maduración de la personalidad».',
+      source: 'Roberts, Walton y Viechtbauer, «Patterns of mean-level change in personality traits across the life course: A meta-analysis of longitudinal studies», Psychological Bulletin, 2006',
+      url: 'https://doi.org/10.1037/0033-2909.132.1.1'
+    }
   },
   {
     topic: 'alma',

@@ -155,8 +155,8 @@
       '<section class="screen intro">' +
         '<p class="kicker">Un test medio chistoso, medio profundo</p>' +
         '<h1>¿Cuál es tu <em>edad mental</em>?</h1>' +
-        '<p class="lead">Veinte preguntas sobre tu cabeza, tu corazón, tu humor, tu alma y tu ocio. Cada respuesta suma o quita años. No hay trampa ni azar: solo tú.</p>' +
-        '<ul class="meta"><li>20 preguntas</li><li>3 minutos</li><li>0 validez científica</li></ul>' +
+        '<p class="lead">Veinticinco preguntas sobre tu cabeza, tu corazón, tu humor, tu alma, tu ocio y un poco de ciencia. Cada respuesta suma o quita años. No hay trampa ni azar: solo tú.</p>' +
+        '<ul class="meta"><li>25 preguntas</li><li>4 minutos</li><li>5 con base científica</li></ul>' +
         (c ? '<div class="banner">🔔 <strong>' + esc(c.name) + '</strong> ya hizo el test y tiene una edad mental de <strong>' + c.age + ' años</strong>. Haz el tuyo y al final verás la comparación.</div>' : '') +
         '<form id="start" autocomplete="off">' +
           '<label for="name">¿Cómo te llamas?</label>' +
@@ -169,7 +169,7 @@
           '<input id="age" name="age" type="number" inputmode="numeric" min="1" max="120" placeholder="Por ejemplo, 29" value="' + (state.realAge == null ? '' : state.realAge) + '">' +
           '<button class="btn primary" type="submit">Empezar</button>' +
         '</form>' +
-        '<p class="disclaimer">Este test no ha pasado por ningún comité de ética. Si eres médica, haz como que no lo viste.</p>' +
+        '<p class="disclaimer">Cinco preguntas se apoyan en investigación publicada sobre cómo cambia la mente con la edad. Las otras veinte se apoyan en haber tenido nevera. Las fuentes están al final, por si alguien con bata quiere revisarlas.</p>' +
       '</section>'
     );
 
@@ -210,6 +210,7 @@
         '<div class="progress"><div class="progress-bar" style="width:' + ((i / TOTAL) * 100) + '%"></div></div>' +
         '<h2 class="question">' + q.text + '</h2>' +
         (q.note ? '<p class="note">' + q.note + '</p>' : '') +
+        (q.science ? '<p class="note sci-note">🔬 Esta pregunta se apoya en investigación publicada. Al final te contamos en cuál.</p>' : '') +
         '<div class="options">' +
           q.options.map(function (o, oi) {
             return '<button type="button" class="option' + (chosen === oi ? ' selected' : '') + '" data-i="' + oi + '">' +
@@ -272,6 +273,21 @@
     }).join('') + '</ul>';
   }
 
+  function scienceList(r) {
+    var items = [];
+    QUESTIONS.forEach(function (q, i) {
+      if (!q.science) return;
+      var o = q.options[r.answers[i]];
+      items.push('<li>' +
+        '<div class="q">' + q.text + '</div>' +
+        '<div class="ans"><b>Tu respuesta:</b> ' + o.text + ' <span class="muted">(' + o.age + ')</span></div>' +
+        '<p class="sci">' + q.science.finding + '</p>' +
+        '<p class="src">Fuente: <a href="' + esc(q.science.url) + '" target="_blank" rel="noopener">' + q.science.source + '</a></p>' +
+      '</li>');
+    });
+    return '<ul class="qlist sci-list">' + items.join('') + '</ul>';
+  }
+
   function shareText(r) {
     return '🧠 Mi edad mental es de ' + r.age + ' años («' + r.profile.title + '»). ¿Y la tuya? Haz el test y al final comparamos: ' + challengeUrl(r);
   }
@@ -289,6 +305,9 @@
         '<p class="real-age">' + realAgeLine(r) + '</p>' +
         '<h3>Por temas</h3>' +
         topicList(r) +
+        '<h3>Las cinco con base científica</h3>' +
+        '<p class="muted small">Cada una se apoya en un hallazgo publicado sobre cómo cambia la mente con la edad. Una sola pregunta no es un instrumento validado, pero la dirección es la que marca la investigación.</p>' +
+        scienceList(r) +
         '<blockquote class="quote">' + r.profile.quote + '</blockquote>' +
         '<div class="actions">' +
           (canCompare ? '<button type="button" class="btn accent" id="compare">Comparar con ' + esc(c.name) + ' →</button>' : '') +
@@ -347,7 +366,8 @@
     corazon: function (o, y) { return o + ' quiere con calma; ' + y + ', con fuegos artificiales.'; },
     humor: function (o, y) { return y + ' se ríe de la caída; ' + o + ', de quien se ríe de la caída.'; },
     alma: function (o, y) { return o + ' ya hizo las paces con el tiempo; ' + y + ' todavía le está pidiendo explicaciones.'; },
-    ocio: function (o, y) { return y + ' cierra el bar; ' + o + ' cierra el libro.'; }
+    ocio: function (o, y) { return y + ' cierra el bar; ' + o + ' cierra el libro.'; },
+    ciencia: function (o, y) { return o + ' es lo que predice la literatura; ' + y + ', el motivo de que sigan haciendo estudios.'; }
   };
 
   function duoVerdict(A, B) {

@@ -24,11 +24,11 @@ la mente con la edad. Al final del test se muestra, para cada una, tu respuesta,
 
 | Pregunta | Hallazgo | Fuente |
 | --- | --- | --- |
-| ¿A qué hora te despertarías sin alarma? | El cronotipo se retrasa en la adolescencia, toca techo hacia los 20 y luego se adelanta con la edad. | Roenneberg et al., *Current Biology*, 2004 |
-| ¿Aceptas un plan nuevo con algo de riesgo? | La búsqueda de sensaciones alcanza su máximo en la adolescencia y baja de forma sostenida en la vida adulta. | Steinberg et al., *Developmental Psychology*, 2008 |
-| ¿Con quién pasarías media hora libre? | Con la edad, la preferencia se desplaza de conocer gente nueva a estar con los vínculos cercanos (selectividad socioemocional). | Fredrickson y Carstensen, *Psychology and Aging*, 1990 |
-| ¿Qué cuentas primero de un viaje con de todo? | Las personas mayores atienden y recuerdan proporcionalmente más lo positivo (efecto de positividad). | Reed, Chan y Mikels, *Psychology and Aging*, 2014 |
-| ¿Cumples un plan al que dijiste que sí? | La responsabilidad y la amabilidad aumentan de media a lo largo de la vida adulta (maduración de la personalidad). | Roberts, Walton y Viechtbauer, *Psychological Bulletin*, 2006 |
+| ¿A qué hora te despertarías sin alarma? | El cronotipo se retrasa en la adolescencia, toca techo hacia los 20 y luego se adelanta con la edad. | Roenneberg et al., «A marker for the end of adolescence», *Current Biology*, 2004 |
+| ¿Aceptas un plan nuevo con algo de riesgo? | La búsqueda de sensaciones alcanza su máximo en la adolescencia y baja de forma sostenida en la vida adulta. | Steinberg et al., «Age differences in sensation seeking and impulsivity as indexed by behavior and self-report», *Developmental Psychology*, 2008 |
+| ¿Con quién pasarías media hora libre? | Con la edad, la preferencia se desplaza de conocer gente nueva a estar con los vínculos cercanos (selectividad socioemocional). | Fredrickson y Carstensen, «Choosing social partners: How old age and anticipated endings make people more selective», *Psychology and Aging*, 1990 |
+| ¿Qué cuentas primero de un viaje con de todo? | Las personas mayores atienden y recuerdan proporcionalmente más lo positivo (efecto de positividad). | Reed, Chan y Mikels, «Meta-analysis of the age-related positivity effect», *Psychology and Aging*, 2014 |
+| ¿Cumples un plan al que dijiste que sí? | La responsabilidad y la amabilidad aumentan de media a lo largo de la vida adulta (maduración de la personalidad). | Roberts, Walton y Viechtbauer, «Patterns of mean-level change in personality traits across the life course», *Psychological Bulletin*, 2006 |
 
 Una sola pregunta no es un instrumento validado: el test sigue siendo un juego. Lo que sí es real
 es la dirección de cada hallazgo.

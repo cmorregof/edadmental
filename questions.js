@@ -121,7 +121,7 @@ window.QUESTIONS = [
     ],
     science: {
       finding: 'El cronotipo (la hora a la que tu reloj interno prefiere dormir y despertar) se va retrasando durante la adolescencia, toca techo alrededor de los 20 años y desde ahí se adelanta poco a poco con la edad.',
-      source: 'Roenneberg et al., Current Biology, 2004',
+      source: 'Roenneberg et al., «A marker for the end of adolescence», Current Biology, 2004',
       url: 'https://doi.org/10.1016/j.cub.2004.11.039'
     }
   },
@@ -188,7 +188,7 @@ window.QUESTIONS = [
     ],
     science: {
       finding: 'La búsqueda de sensaciones (las ganas de experiencias nuevas e intensas) alcanza su máximo en la adolescencia y baja de forma sostenida a lo largo de la vida adulta.',
-      source: 'Steinberg et al., Developmental Psychology, 2008',
+      source: 'Steinberg et al., «Age differences in sensation seeking and impulsivity as indexed by behavior and self-report», Developmental Psychology, 2008',
       url: 'https://doi.org/10.1037/a0012955'
     }
   },
@@ -255,7 +255,7 @@ window.QUESTIONS = [
     ],
     science: {
       finding: 'Cuando el tiempo se percibe como amplio, priorizamos conocer gente nueva y aprender; cuando se percibe como limitado, elegimos a quienes ya nos importan. Con la edad, la preferencia se desplaza hacia los vínculos cercanos. Es la teoría de la selectividad socioemocional.',
-      source: 'Fredrickson y Carstensen, Psychology and Aging, 1990',
+      source: 'Fredrickson y Carstensen, «Choosing social partners: How old age and anticipated endings make people more selective», Psychology and Aging, 1990',
       url: 'https://doi.org/10.1037/0882-7974.5.3.335'
     }
   },
@@ -303,7 +303,7 @@ window.QUESTIONS = [
     ],
     science: {
       finding: 'Con la edad, la atención y la memoria se inclinan hacia lo positivo: las personas mayores atienden y recuerdan proporcionalmente más lo bueno que lo malo, en comparación con las jóvenes. Se conoce como «efecto de positividad».',
-      source: 'Reed, Chan y Mikels, Psychology and Aging, 2014 (metaanálisis)',
+      source: 'Reed, Chan y Mikels, «Meta-analysis of the age-related positivity effect», Psychology and Aging, 2014',
       url: 'https://doi.org/10.1037/a0035194'
     }
   },
@@ -328,7 +328,7 @@ window.QUESTIONS = [
     ],
     science: {
       finding: 'La responsabilidad y la amabilidad (dos de los cinco grandes rasgos de personalidad) aumentan de media a lo largo de la vida adulta, sobre todo entre los 20 y los 40 años. La psicología lo llama «maduración de la personalidad».',
-      source: 'Roberts, Walton y Viechtbauer, Psychological Bulletin, 2006 (metaanálisis de 92 estudios longitudinales)',
+      source: 'Roberts, Walton y Viechtbauer, «Patterns of mean-level change in personality traits across the life course: A meta-analysis of longitudinal studies», Psychological Bulletin, 2006',
       url: 'https://doi.org/10.1037/0033-2909.132.1.1'
     }
   },

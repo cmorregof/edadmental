@@ -33,6 +33,34 @@ la mente con la edad. Al final del test se muestra, para cada una, tu respuesta,
 Una sola pregunta no es un instrumento validado: el test sigue siendo un juego. Lo que sí es real
 es la dirección de cada hallazgo.
 
+## La carta de la noche
+
+En `cita/` vive una segunda app, pensada para una cita de cena y copas: **La carta de la noche**.
+Seis platos para conocerse de seis formas, con un solo celular que se pasa entre los dos.
+
+| Plato | Mecánica | Base |
+| --- | --- | --- |
+| 🥂 Aperitivo, *Apuesto a que…* | Uno responde en secreto, el otro adivina. Se cuenta la «lectura mutua». | Similitud percibida: Tidwell, Eastwick y Finkel, 2013 |
+| 🥗 Entrada, *Pregunta y repregunta* | Por turnos; quien escucha repregunta antes de contestar. Sube de nivel. | Huang et al., 2017; Sprecher et al., 2013; Kardas, Kumar y Epley, 2022 |
+| 🍽️ Plato fuerte, *Buenas noticias y desastres con final feliz* | Uno cuenta una anécdota; el otro recibe una misión para celebrarla. | Reis et al., 2010; Bruk, Scholl y Bless, 2018; Fraley y Aron, 2004 |
+| 🍰 Postre, *¿Qué harían si…?* | Hipotéticos que se resuelven entre los dos. | Aron et al., 2000; Proyer y Brauer |
+| 🍸 Copas, *Retos* | Sincronía a la de tres, duelo de miradas, dos verdades y una mentira, reseña. | Hove y Risen, 2009; Kellerman, Lewis y Laird, 1989 |
+| 🧾 La cuenta, *Lo que me llevo* | Lo aprendido, lo que gustó, un regalo imaginario y una pregunta pendiente. | Boothby et al., 2018; Zhao y Epley, 2021 |
+
+Después de la cuenta se abre **Para llevar**: una ronda relámpago y una segunda vuelta de cada plato
+con las cartas de repuesto. Todo el contenido está en `cita/cards.js`.
+
+Detalles pensados para la mesa:
+
+- Modo restaurante: tema oscuro y letra grande por defecto. Hay modo claro.
+- Cada plato termina con la pantalla «guarden el celular». Las reglas de la casa citan por qué.
+- Cualquiera puede cambiar una carta o saltarla, tres saltos por persona.
+- El progreso se guarda en el navegador: si el celular se bloquea, la noche sigue donde iba.
+- Funciona sin señal una vez abierta, gracias a un service worker. Se puede añadir a la pantalla de inicio.
+- Modo corto, de media hora, y modo completo, de una hora repartida en la noche.
+
+Publicada junto al test, queda en `https://<usuario>.github.io/edadmental/cita/`.
+
 ## Usarlo
 
 Abre `index.html` en el navegador y listo. Para compartirlo con un enlace, publícalo con GitHub Pages:

@@ -1,0 +1,15 @@
+{
+  "name": "La carta de la noche",
+  "short_name": "La carta",
+  "description": "Seis platos para conocerse de seis formas. Un solo celular, que se pasa.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#14121b",
+  "theme_color": "#14121b",
+  "lang": "es",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

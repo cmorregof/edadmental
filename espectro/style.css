@@ -331,3 +331,48 @@ input:focus { outline: none; border-color: var(--accent-2); }
 .opp .ans.a b { color: var(--accent-2); }
 .opp .ans.b b { color: var(--accent); }
 .coin { font-family: var(--font-head); font-size: 1.15rem; margin: 6px 0 16px; }
+
+/* ---------- hub ---------- */
+.menu-list { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
+.menu-row {
+  font: inherit; text-align: left; cursor: pointer; width: 100%;
+  display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 12px;
+  padding: 14px 14px; border-radius: 16px;
+  border: 2px solid var(--line); background: #fff; color: var(--ink);
+}
+.menu-row:hover { border-color: var(--accent-2); }
+.menu-emoji { font-size: 1.6rem; line-height: 1; }
+.menu-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.menu-name { font-family: var(--font-head); font-size: 1.15rem; font-weight: 700; }
+.menu-name em { font-style: italic; font-weight: 400; color: var(--muted); }
+.menu-sub { font-size: .82rem; color: var(--muted); }
+.status { font-size: .74rem; font-weight: 700; color: var(--muted); white-space: nowrap; padding: 4px 9px; border-radius: 999px; background: #fbf6ee; text-align: center; }
+.status.ok { color: var(--accent); }
+.status.live { color: var(--accent-2); }
+.menu-foot { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 18px; }
+.link { font: inherit; font-size: .88rem; font-weight: 600; cursor: pointer; background: none; border: 0; padding: 6px 2px; color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
+.link.danger { color: var(--accent); }
+
+/* ---------- cuestionario: 5 y 7 opciones ---------- */
+.options.compact .option { padding: 11px 14px; font-size: .95rem; }
+.options.compact .option .key { width: 24px; height: 24px; font-size: .72rem; }
+.prov { font-size: .78rem; color: var(--warn); background: var(--warn-soft); border-radius: 10px; padding: 6px 10px; margin: -8px 0 14px; }
+
+/* ---------- ASRS: casillas ---------- */
+.boxes { display: flex; gap: 8px; margin: 8px 0 14px; }
+.box { flex: 1; height: 38px; border-radius: 10px; border: 2px solid var(--line); background: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: .85rem; color: var(--muted); }
+.box.on { background: var(--accent-2); border-color: var(--accent-2); color: #fff; }
+.box.b.on { background: var(--accent); border-color: var(--accent); }
+.big-age .num.small { font-size: clamp(3.4rem, 16vw, 5.5rem); }
+
+/* ---------- perfil ---------- */
+.perfil { display: flex; flex-direction: column; gap: 10px; margin: 12px 0 6px; }
+.perfil-card { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 12px; background: #fbf6ee; border-radius: 16px; padding: 12px 14px; }
+.perfil-card .pc-emoji { font-size: 1.5rem; }
+.perfil-card .pc-name { font-family: var(--font-head); font-weight: 700; }
+.perfil-card .pc-sub { font-size: .82rem; color: var(--muted); }
+.perfil-card .pc-num { font-family: var(--font-head); font-size: 1.6rem; font-weight: 800; color: var(--accent-2); white-space: nowrap; }
+.perfil-card.pending { opacity: .6; }
+.perfil-card.pending .pc-num { color: var(--muted); font-size: 1rem; }
+.cmp-section { margin-top: 26px; padding-top: 16px; border-top: 1px solid var(--line); }
+.cmp-section h2 { font-size: 1.4rem; }

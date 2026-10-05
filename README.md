@@ -61,24 +61,23 @@ Detalles pensados para la mesa:
 
 Publicada junto al test, queda en `https://<usuario>.github.io/edadmental/cita/`.
 
-## Autistómetro
+## Neurodivergencia
 
-En `espectro/` vive la tercera capa: el **Cociente del Espectro Autista (AQ)** de Baron-Cohen et al., 2001,
-con la traducción oficial al español del Autism Research Centre de Cambridge. Cincuenta afirmaciones,
-cuatro opciones, puntuación oficial de 0 a 50 y las cinco subescalas: habilidad social, cambio de
-atención, atención al detalle, comunicación e imaginación.
+En `espectro/` vive la tercera capa: tres instrumentos reales, cero inventados, con su puntuación oficial,
+sus fuentes en cada pantalla y comparación entre dos por enlace. Cada uno guarda su progreso en el navegador.
 
-- El resultado se muestra sobre una regla con las marcas reales de la investigación: media de población
-  general ≈ 17 (Ruzich et al., 2015), umbral clínico 26 (Woodbury-Smith et al., 2005), corte original 32
-  (Baron-Cohen et al., 2001) y media de adultos autistas ≈ 35.
-- Lectura por franjas, escrita sin diagnosticar, y letra pequeña: es un cribado, es un autoinforme, y quien
-  enmascara puntúa bajo.
-- Comparación entre dos por enlace, como en el test de edad mental: totales sobre la misma regla,
-  subescalas lado a lado y las afirmaciones donde respondieron al revés.
-- El progreso se guarda en el navegador por si el celular se bloquea.
+| Instrumento | Qué mide | Ítems | Puntuación |
+| --- | --- | --- | --- |
+| 🔬 **Autistómetro**, Cociente del Espectro Autista (AQ), Baron-Cohen et al., 2001 | Rasgos del espectro autista en cinco subescalas | 50, con la traducción oficial al español del Autism Research Centre | 0 a 50 sobre una regla con media de población ≈ 17, umbral clínico 26, corte original 32 y media de adultos autistas ≈ 35 |
+| ⚡ **TDAH**, escala ASRS v1.1, Kessler et al., 2005, con la OMS | Síntomas de TDAH en adultos: parte A de cribado y parte B de contexto, en dos dominios | 18, traducción provisional pendiente de la versión oficial para Colombia | Casillas sombreadas con la clave oficial; cribado positivo con 4 o más de 6 en la parte A |
+| 🎭 **Camuflaje**, cuestionario CAT-Q, Hull et al., 2019 | Cuánto esfuerzo se pone en parecer «normal» en lo social: compensación, enmascaramiento y asimilación | 25, traducción propia del original mientras se publica la validación española | 25 a 175 con las medias por grupo del estudio original y el corte de 100 |
 
-Los ítems se reproducen sin modificaciones y con los créditos que pide el Autism Research Centre, que
-permite el uso gratuito de sus tests con fines no comerciales. Todo el contenido está en `espectro/items.js`.
+- **Perfil** con los tres resultados y una lectura del cruce entre AQ y camuflaje, que es donde el AQ se queda corto.
+- **Comparación** por enlace: cada instrumento que ambos hayan hecho, con reglas dobles, subescalas lado a lado y los ítems donde respondieron al revés. Los enlaces de la versión anterior, solo con el AQ, siguen funcionando.
+- Lectura por franjas escrita sin diagnosticar y letra pequeña en cada instrumento: son cribados, son autoinformes, y quien enmascara puntúa bajo en el AQ.
+
+Los ítems del AQ se reproducen sin modificaciones y con los créditos que pide el Autism Research Centre.
+Todo el contenido está en `espectro/items.js`, `espectro/asrs.js` y `espectro/catq.js`.
 
 ## Usarlo
 

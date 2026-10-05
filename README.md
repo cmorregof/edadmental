@@ -97,3 +97,23 @@ Todo el contenido está en `questions.js`:
   además un campo `science` con el hallazgo y la fuente.
 - `PROFILES`: los perfiles por rango de edad mental, con título, descripción y frase final.
   El total posible va de 17 a 61 años, y las franjas están calibradas a ese rango.
+
+## Se alinearon las estrellas
+
+En `estrellas/` vive la cuarta capa: seis rondas para pensar juntos si emigramos. No mide a nadie: alinea
+decisiones. Cada uno responde por su lado y las respuestas viajan en el fragmento del enlace, nunca en la
+query string.
+
+| Ronda | Qué hace |
+| --- | --- |
+| 🌱 Lo que quiero | Tres preguntas sobre uno mismo y un texto corto. Si alguien marca «no por ahora», El acuerdo lo señala con cariño. |
+| 💯 Cien puntos | Repartir 100 puntos entre ocho categorías. La comparación muestra dónde pesan distinto. |
+| 🧱 No negociables | Seis ítems en secreto, con «prefiero hablarlo en persona» como opción respetada. |
+| 🗺️ Cómo funciona | Diez cartas con fuentes y un selector de rutas. No compara: se lee. |
+| 🏙️ Ciudades | Seis opciones. Cada uno califica de 1 a 5 solo en sus cuatro categorías más pesadas. |
+| ⏳ Plazos y miedos | Cinco disparadores: cuánto pesa, un texto y la misión que se le pide al otro. Más la línea de tiempo. |
+| 🤝 El acuerdo | Coincidencias, diferencias, ranking conjunto de ciudades, tres preguntas pendientes y próximos pasos. |
+
+Cada dato lleva su fuente con 🔬 y su estado: verificado, corregido respecto al borrador (✏️) o por verificar (⚑).
+Modo oscuro, funciona sin señal y guarda el progreso, igual que la carta de la noche. Todo el contenido
+está en `estrellas/datos.js`.

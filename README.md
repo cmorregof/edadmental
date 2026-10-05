@@ -61,6 +61,25 @@ Detalles pensados para la mesa:
 
 Publicada junto al test, queda en `https://<usuario>.github.io/edadmental/cita/`.
 
+## Autistómetro
+
+En `espectro/` vive la tercera capa: el **Cociente del Espectro Autista (AQ)** de Baron-Cohen et al., 2001,
+con la traducción oficial al español del Autism Research Centre de Cambridge. Cincuenta afirmaciones,
+cuatro opciones, puntuación oficial de 0 a 50 y las cinco subescalas: habilidad social, cambio de
+atención, atención al detalle, comunicación e imaginación.
+
+- El resultado se muestra sobre una regla con las marcas reales de la investigación: media de población
+  general ≈ 17 (Ruzich et al., 2015), umbral clínico 26 (Woodbury-Smith et al., 2005), corte original 32
+  (Baron-Cohen et al., 2001) y media de adultos autistas ≈ 35.
+- Lectura por franjas, escrita sin diagnosticar, y letra pequeña: es un cribado, es un autoinforme, y quien
+  enmascara puntúa bajo.
+- Comparación entre dos por enlace, como en el test de edad mental: totales sobre la misma regla,
+  subescalas lado a lado y las afirmaciones donde respondieron al revés.
+- El progreso se guarda en el navegador por si el celular se bloquea.
+
+Los ítems se reproducen sin modificaciones y con los créditos que pide el Autism Research Centre, que
+permite el uso gratuito de sus tests con fines no comerciales. Todo el contenido está en `espectro/items.js`.
+
 ## Usarlo
 
 Abre `index.html` en el navegador y listo. Para compartirlo con un enlace, publícalo con GitHub Pages:
